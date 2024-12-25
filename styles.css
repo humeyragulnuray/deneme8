@@ -1,0 +1,219 @@
+
+
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    animation: slide 16s infinite;
+    opacity: 0.8;
+}
+
+@keyframes slide {
+    0%, 25% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+.call-to-action {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.call-to-action .btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.musteri-mesaji {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+#hakkimizda, #galeri {
+    padding: 20px;
+    text-align: center;
+}
+
+#iletisim-konum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.iletisim, .konum {
+    width: 45%;
+    margin: 10px;
+}
+
+.iletisim form {
+    display: flex;
+    flex-direction: column;
+}
+
+.iletisim form input, .iletisim form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.iletisim form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.galeri-grid img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.galeri-grid img:hover {
+    transform: scale(1.1);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Etiketler */
+#tags {
+    padding: 30px;
+    text-align: center;
+    background: #f4f4f4;
+    margin-top: 20px;
+}
+
+#tags .tag-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#tags .tag-list a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 14px;
+}
+
+#tags .tag-list a:hover {
+    background: #e64a19;
+}
+
+/* Bilgi Bölümü */
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.address-contact, .tags-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .address-contact, .tags-section {
+        width: 48%;
+        margin-bottom: 0;
+    }
+}
+
+.address-contact h2, .tags-section h2 {
+    color: #ff6600;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.tags-section p a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.tags-section p a:hover {
+    text-decoration: underline;
+    color: #ff6600;
+}
